@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Prompts</title>
+</head>
+<body>
+    <h1>Generated Prompts</h1>
+    <p>User Question: {{ user_question }}</p>
+    <ul>
+        {% for prompt in generated_prompts %}
+            <li>{{ prompt }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go Back</a>
+</body>
+</html>
