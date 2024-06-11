@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 import openai
-#
+
 app = Flask(__name__)
 def generate_prompts(user_question, num_prompts=3):
     # Adjust the prompt to instruct the model to generate prompts instead of answers
